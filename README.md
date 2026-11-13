@@ -29,6 +29,10 @@ Correct waste sorting is the first step of effective recycling. This project fin
 
 The dataset is **class-imbalanced** (`clothes` has roughly 4× the images of `trash`), so the train/val/test split is stratified.
 
+![Class distribution](assets/class_distribution.png)
+
+![Sample images](assets/sample_images.png)
+
 ## 🧪 Methodology
 
 **Preprocessing and augmentation**
@@ -63,7 +67,10 @@ Trained on a Tesla T4 GPU in Google Colab.
 
 Lowering the learning rate for a short second stage lifted validation accuracy by about 6.5 points, and the test score matches the validation score, so the model is not overfitting to the validation set.
 
-**Confusion matrix observations (test set)**
+### Confusion matrix (test set)
+
+![Confusion matrix](assets/confusion_matrix.png)
+
 - Strongest classes: `clothes` (281 of 284 correct), `shoes`, `cardboard`, `battery`.
 - Most common confusions are between materials that look alike: `glass` ↔ `metal` / `plastic`, and `plastic` ↔ `metal`.
 - `trash` is the weakest class (56 of 68 correct), consistent with it having the fewest training images and being a catch-all category.
@@ -73,8 +80,8 @@ Lowering the learning rate for a short second stage lifted validation accuracy b
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/<your-username>/garbage-classification.git
-cd garbage-classification
+git clone https://github.com/nafisiqbalneloy/Grabage-Classifaction-Using-Deep-Learning.git
+cd Grabage-Classifaction-Using-Deep-Learning
 pip install torch torchvision gradio pillow scikit-learn matplotlib seaborn pandas kaggle
 ```
 
@@ -132,6 +139,7 @@ Class order is alphabetical, matching `ImageFolder`.
 ```
 .
 ├── Garbage_Classification.ipynb   # EDA, training, evaluation, deployment
+├── assets/                        # Figures used in this README
 └── README.md
 ```
 
