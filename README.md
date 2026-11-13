@@ -147,4 +147,4 @@ Class order is alphabetical, matching `ImageFolder`.
 
 ## 📄 License
 
-Add your preferred license for the code (e.g. MIT). The dataset is MIT-licensed, via [sumn2u/garbage-classification-v2](https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2).
+via [sumn2u/garbage-classification-v2](https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2).
