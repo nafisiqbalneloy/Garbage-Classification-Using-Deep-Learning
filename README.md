@@ -80,8 +80,8 @@ Lowering the learning rate for a short second stage lifted validation accuracy b
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/nafisiqbalneloy/Grabage-Classifaction-Using-Deep-Learning.git
-cd Grabage-Classifaction-Using-Deep-Learning
+git clone https://github.com/nafisiqbalneloy/Garbage-Classification-Using-Deep-Learning.git
+cd Garbage-Classification-Using-Deep-Learning
 pip install torch torchvision gradio pillow scikit-learn matplotlib seaborn pandas kaggle
 ```
 
